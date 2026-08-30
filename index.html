@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diario di Progetto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <h1 class="title">Nome Progetto (da decidere)</h1>
+    <p class="subtitle">Diario di sviluppo e roadmap</p>
+  </header>
+
+  <main>
+    
+
+    <div class="roadmap">
+      <h1>Roadmap del progetto</h1>
+      <p>
+        Questa roadmap sarà suddivisa in tre, ogni voce sarà un obiettivo generico, per ogni voce ci sarà poi uno stato di avanzamento con dettagli aggiuntivi: In Corso - Messa a punto - Da capire
+      </p>
+    </div>
+    <section class="faq">       
+
+        <details>
+            <summary onclick="cambiasimbolo(event)">In Corso<span class="simbolo">+</span></summary>
+            <p>Creazione di vari asset usando Blender, distinzione tra high poly e low poly e l’impatto che questi hanno sui fps finali.</p>
+        </details>
+
+        <details>
+            <summary onclick="cambiasimbolo(event)">Messa a punto<span class="simbolo">+</span></summary>
+            <p>Un prima idea generale su come il motore di “Distruzione” funzionerà: 
+              Abbiamo già pensato a qualcosa che interagisca in base alla forza che riceve, e in base a quella, insieme all’angolazione, alla superficie di contatto e al valore di resistenza di un determinato oggetto determina il numero di pezzi da separare.
+              Per poi poterci interagire serve un sistema che controlli se un determinato pezzo ha un qualche tipo di contatto con un altro oggetto, e in base a quello, renderlo statico o dinamico, in pratica fisica on o off per le presatzioni.
+            </p>
+            </details>
+
+        <details>
+            <summary onclick="cambiasimbolo(event)">Da capire<span class="simbolo">+</span></summary>
+            <p>Determinare la forma del pezzo che si spacca in base a determinati valori di forza applicata, angolazione, punti deboli, resistenza determinata dal spessore etc...</p>
+        </details>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; Gotti e Mara. Tutti i diritti riservati.</p>
+  </footer>
+
+
+  <script src="script.js" defer></script>
+
+</body>
+</html>
